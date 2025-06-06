@@ -45,7 +45,7 @@ ssh your-user@your-server-ip
 ```
 ### 2: Clone this repository on your server
 ```bash
-git clone 
+git clone https://github.com/iam-avinash-jagtap/DevOps-Tools-Installation-Scripts.git
 ```
 ---
 ### 3: Navigate to the folder with scripts
