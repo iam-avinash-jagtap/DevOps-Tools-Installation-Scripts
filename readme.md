@@ -1,5 +1,5 @@
 # DevOps Tools Installation Scripts
-This repository contains automated installation scripts for 15+  popular DevOps tools, tailored specifically for **Amazon Linux 2023** and **Ubuntu 24.04** operating systems. Each script installs a single tool with necessary permissions and configurations to get you started quickly.
+This repository contains automated installation scripts for 15+  popular DevOps tools, tailored specifically for **Amazon Linux 2023** and **Ubuntu 24.04** operating systems. Each script installs a single tool with the necessary permissions and configurations to get you started quickly.
 
 ---
 
@@ -41,25 +41,27 @@ Follow these steps to install your desired DevOps tools:
 Use SSH or your preferred terminal to connect to your server where you want to install the tools.
 
 ```bash
-ssh your-user@your-server-ip
+ssh -i "<Private-Key>" ec2-user@<EC2_Instance_Public-IP>
+# or
+ssh -i "<Private-Key>" ubuntu@<EC2_Instance_Public-IP>
 ```
 ### 2: Clone this repository on your server
 ```bash
 git clone https://github.com/iam-avinash-jagtap/DevOps-Tools-Installation-Scripts.git
 ```
 ---
-### 3: Navigate to the folder with scripts
+### 3: Navigate to the Directory to access scripts
 ```bash
-cd /amazon-linux-2023
+cd /Amazon linux 2023
 # or
-cd /ubuntu-24.04
+cd /Ubuntu 24.04
 ```
 ---
 ### 4: Make the script executable
 ```bash
 chmod +x install_<toolname>_ubuntu.sh
 # or for Amazon Linux scripts
-chmod +x install_<toolname>_amazonlinux.sh
+chmod +x install_<toolname>.sh
 ```
 ---
 ### 5: Run the installation script with sudo
